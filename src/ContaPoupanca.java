@@ -6,20 +6,20 @@ public class ContaPoupanca extends Conta {
 	}
 
 	@Override
-	public boolean saca(double valor) {
-		 
-		return super.saca(valor);
+	public void saca(double valor) throws SaldoInsuficienteException {
+
+		super.saca(valor);
 	}
 
 	@Override
 	public void deposita(double valor) {
 		super.saldo = super.saldo + valor;
-		
+
 	}
 
 	public double getValorImposto() {
 		// TODO Auto-generated method stub
 		return 0;
 	}
-	
+
 }

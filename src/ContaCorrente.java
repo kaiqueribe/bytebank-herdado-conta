@@ -8,10 +8,10 @@ public class ContaCorrente extends Conta implements Tributavel{
 	}
 
 	@Override
-	public boolean saca(double valor) {
+	public void saca(double valor) throws SaldoInsuficienteException{
 		double valorASacar = valor;
 
-		return super.saca(valorASacar);
+		super.saca(valorASacar);
 	}
 
 	@Override
@@ -19,10 +19,6 @@ public class ContaCorrente extends Conta implements Tributavel{
 		super.saldo = super.saldo + valor;
 
 	}
-
-	
-		
-		
 	
 
 	public double getValorImposto() {
