@@ -1,5 +1,7 @@
+package br.com.bytebank.banco.modelo;
 
-public abstract class Conta {
+ public abstract class Conta {
+	 
 	protected double saldo;
 	private int agencia;
 	private int numero;
@@ -19,7 +21,7 @@ public abstract class Conta {
 
 	public void saca(double valor) throws SaldoInsuficienteException {
 		if (this.saldo < valor) {
-			throw new SaldoInsuficienteException("Saldo Insuficiente, seu saldo e " + this.saldo + ", Valor: " + valor);
+			throw new SaldoInsuficienteException("Saldo Insuficiente, seu saldo e " + this.saldo + ",Tentativa de saque no valor de: " + valor);
 		}
 		this.saldo -= valor;
 	}

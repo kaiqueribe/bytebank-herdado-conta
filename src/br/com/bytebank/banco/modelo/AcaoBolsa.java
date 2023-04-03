@@ -1,9 +1,11 @@
+package br.com.bytebank.banco.modelo;
 
-public class SeguroDeVida implements Tributavel {
+public class AcaoBolsa implements Tributavel {
 
 	public double getValorImposto() {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
+	
 }
