@@ -23,4 +23,10 @@ public class ContaPoupanca extends Conta {
 		return 0;
 	}
 
+	@Override
+	public String toString() {
+		return "Conta Poupanca: " + super.toString();
+
+	}
+
 }
