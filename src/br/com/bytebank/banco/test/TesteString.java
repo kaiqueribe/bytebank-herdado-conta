@@ -18,12 +18,7 @@ public class TesteString {
 //		
 //		System.out.println(nome);
 		
-		Object cc = new ContaCorrente(1234,33785);
-		Object cp = new ContaPoupanca(2254,55689);
-		Object cliente = new Cliente();
 		
-		System.out.println(cc.toString());
-		System.out.println(cp);
 		
 		
 		
